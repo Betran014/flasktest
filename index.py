@@ -30,7 +30,7 @@ def index():
 def pred():
     return render_template('prediction.html')
 
-@app.route('/pred', methods=['POST'])
+@app.route('/prediction', methods=['POST'])
 def submit_file():
     if request.method == 'POST':
         if 'file' not in request.files:
